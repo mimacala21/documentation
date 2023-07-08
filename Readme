@@ -1,0 +1,44 @@
+==========Instalation=======
+1. create a database on your hosting and write down its name, username and password
+2. extract the contents of the zip folder to the www directory on your hosting
+3. go to your domain.
+
+4. Follow the installer instructions
+
+==========User manual -admin ======
+Left menu
+Short urls -> 
+is used to create private urls that are not displayed on the main page, any registered user can
+create a given number of url addresses and a given number of qr codes to them according to the system settings.
+
+QR codes ->
+displays the generated qr code to url addresses
+
+<-only admin see->
+
+All urls -> 
+Here you can see all url addresses from the entire system
+
+All users -> 
+Here you can see all users from the entire system
+
+Blacklist -> 
+Here it is possible to add url addresses and parts of addresses to the blacklist
+
+Ads Scripts -> 
+ads images are inserted here, the recommended size is 150x50 and links are inserted into the field, where the user should be redirected after clicking on the image.
+
+<---------------->
+Settings -> 
+Only the admin can see the option of setting the system, it is possible to edit the brand and set the maximum number of urls and qr per user
+
+
+
+
+=============API===========
+Send http get to ->  yourdomain/api?longurl=insertyoururl
+
+returns response json
+0:
+longurl "insertyoururl"
+shorturl "returned shorturl"
